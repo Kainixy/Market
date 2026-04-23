@@ -1,3 +1,4 @@
+#######################################################
 class Thing:
     def __init__(self
                  , id: int
@@ -46,7 +47,7 @@ class Thing:
     @status.setter
     def status(self, status):
         if status != 0 and status != 1:
-                raise ValueError(f'Status can be 0 or 1, got {status}')
+                raise ValueError(f'Status can be 0 or 1, got {status}!')
         self._status = status
 
     def get_thing_status(self):
